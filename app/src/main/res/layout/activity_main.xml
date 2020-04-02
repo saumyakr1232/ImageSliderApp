@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_name"
+        android:id="@+id/txtCityName"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        />
+    <com.google.android.material.tabs.TabLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/tabLayout"
+        android:layout_below="@+id/txtCityName"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tabLayout"
+        android:layout_marginTop="10dp"
+        android:id="@+id/citiesViewPager"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_a_city_to_see_the_picture"
+        android:layout_below="@id/citiesViewPager"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:id="@+id/txtExplain"
+
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgCities"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtExplain"
+
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/london"
+            android:id="@+id/rbLondon"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:theme="@style/MyRadioButton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delhi"
+            android:id="@+id/rbDelhi"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:theme="@style/MyRadioButton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbTokyo"
+            android:text="@string/tokyo"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:theme="@style/MyRadioButton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_york"
+            android:id="@+id/rbNewYork"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:theme="@style/MyRadioButton"/>
+    </RadioGroup>
+
+</RelativeLayout>

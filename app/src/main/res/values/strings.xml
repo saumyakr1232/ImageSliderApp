@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImageSlider</string>
+    <string name="city_name">City name</string>
+    <string name="choose_a_city_to_see_the_picture">Choose a city to see the picture:</string>
+    <string name="london">London</string>
+    <string name="delhi">Delhi</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="new_york">New York</string>
+</resources>
